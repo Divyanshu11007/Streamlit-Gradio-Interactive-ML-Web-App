@@ -1,0 +1,123 @@
+{
+  "model_path": "house_price_model.joblib",
+  "model_name": "HistGradientBoosting",
+  "cv_results": [
+    {
+      "model": "RandomForest",
+      "r2_mean": 0.812,
+      "r2_std": 0.0081
+    },
+    {
+      "model": "GradientBoosting",
+      "r2_mean": 0.8271,
+      "r2_std": 0.0041
+    },
+    {
+      "model": "HistGradientBoosting",
+      "r2_mean": 0.8409,
+      "r2_std": 0.0044
+    }
+  ],
+  "importances": [
+    {
+      "feature": "Population",
+      "d_r2": 0.0075
+    },
+    {
+      "feature": "AveBedrms",
+      "d_r2": 0.0158
+    },
+    {
+      "feature": "HouseAge",
+      "d_r2": 0.0375
+    },
+    {
+      "feature": "AveRooms",
+      "d_r2": 0.0969
+    },
+    {
+      "feature": "AveOccup",
+      "d_r2": 0.1596
+    },
+    {
+      "feature": "MedInc",
+      "d_r2": 0.3885
+    },
+    {
+      "feature": "Longitude",
+      "d_r2": 0.7897
+    },
+    {
+      "feature": "Latitude",
+      "d_r2": 0.8923
+    }
+  ],
+  "map_sample_path": "map_sample.json",
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "feature_labels": {
+    "MedInc": "Median income ($10k)",
+    "HouseAge": "Median house age (years)",
+    "AveRooms": "Avg rooms per household",
+    "AveBedrms": "Avg bedrooms per household",
+    "Population": "Block population",
+    "AveOccup": "Avg occupants per household",
+    "Latitude": "Latitude",
+    "Longitude": "Longitude"
+  },
+  "feature_ranges": {
+    "MedInc": {
+      "min": 0.4999,
+      "max": 12.253354500000002,
+      "default": 3.5347999999999997
+    },
+    "HouseAge": {
+      "min": 1.0,
+      "max": 52.0,
+      "default": 29.0
+    },
+    "AveRooms": {
+      "min": 0.8461538461538461,
+      "max": 15.754931806259924,
+      "default": 5.229128787878788
+    },
+    "AveBedrms": {
+      "min": 0.3333333333333333,
+      "max": 3.112918261538778,
+      "default": 1.048780487804878
+    },
+    "Population": {
+      "min": 3.0,
+      "max": 7233.635000000002,
+      "default": 1166.0
+    },
+    "AveOccup": {
+      "min": 0.6923076923076923,
+      "max": 6.122154968454263,
+      "default": 2.818115654360196
+    },
+    "Latitude": {
+      "min": 32.54,
+      "max": 41.95,
+      "default": 34.26
+    },
+    "Longitude": {
+      "min": -124.35,
+      "max": -114.31,
+      "default": -118.49
+    }
+  },
+  "r2": 0.8445,
+  "mae_usd": 29907,
+  "rmse_usd": 45145,
+  "n_train": 16512,
+  "n_test": 4128
+}
